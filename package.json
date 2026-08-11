@@ -1,6 +1,6 @@
 {
   "name": "cbn-exchange-rate",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Official Central Bank of Nigeria (Nigeria) daily exchange rates — 13 currencies vs NGN, history since 2001. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "cbn",
