@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'NGN', { apiKey: 'art_live_...' });
 {
   bank: 'cbn',
   name: 'Central Bank of Nigeria',
-  rate_date: '2026-08-10',   // Central Bank of Nigeria's own publication date
+  rate_date: '2026-09-09',   // Central Bank of Nigeria's own publication date
   source: 'USD',
   target: 'NGN',
-  rate: 1359.6415,
+  rate: 1328.7129,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -98,11 +98,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbn',
   name: 'Central Bank of Nigeria',
-  rate_date: '2026-08-10',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "NGN", "type": "middle", "value": 1359.6415 },
-    { "base": "USD", "quote": "NGN", "type": "sell", "value": 1360.1415 },
-    { "base": "USD", "quote": "NGN", "type": "buy", "value": 1359.1415 },
+    { "base": "USD", "quote": "NGN", "type": "middle", "value": 1328.7129 },
+    { "base": "USD", "quote": "NGN", "type": "sell", "value": 1329.2129 },
+    { "base": "USD", "quote": "NGN", "type": "buy", "value": 1328.2129 },
     // … the rest of the published table (13 currencies vs NGN)
   ],
   disclaimer: '…'
@@ -142,7 +142,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'cbn-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'NGN', from: '2026-01-01', to: '2026-08-10' },
+  { source: 'USD', target: 'NGN', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -155,11 +155,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'NGN',
   from: '2026-01-01',
-  to: '2026-08-10',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-10', rate: 1359.6415, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 1328.7129, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -172,9 +172,9 @@ Pass `{ symbol: 'USD' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-Central Bank of Nigeria currently publishes rates covering **14 currencies** (as of the latest table):
+Central Bank of Nigeria currently publishes rates covering **13 currencies** against the NGN (as of the latest table):
 
-`AED` · `CHF` · `CNY` · `DKK` · `EUR` · `GBP` · `JPY` · `NGN` · `SAR` · `USD` · `XDR` · `XOF` · `XUA` · `ZAR`
+🇦🇪 `AED` · 🇨🇭 `CHF` · 🇨🇳 `CNY` · 🇩🇰 `DKK` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇯🇵 `JPY` · 🇸🇦 `SAR` · 🇺🇸 `USD` · `XDR` · `XOF` · `XUA` · 🇿🇦 `ZAR`
 
 ## ⚖️ Published vs derived rates
 
@@ -237,6 +237,14 @@ getRate('USD', 'NGN', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2001 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/cbn.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/cbn/latest.json`
 
 ## 🔗 Links
 
