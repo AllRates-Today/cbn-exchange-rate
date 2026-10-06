@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'NGN', { apiKey: 'art_live_...' });
 {
   bank: 'cbn',
   name: 'Central Bank of Nigeria',
-  rate_date: '2026-09-25',   // Central Bank of Nigeria's own publication date
+  rate_date: '2026-10-06',   // Central Bank of Nigeria's own publication date
   source: 'USD',
   target: 'NGN',
-  rate: 1329.0138,
+  rate: 1330.3745,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -113,11 +113,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbn',
   name: 'Central Bank of Nigeria',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "NGN", "type": "middle", "value": 1329.0138 },
-    { "base": "USD", "quote": "NGN", "type": "sell", "value": 1329.5138 },
-    { "base": "USD", "quote": "NGN", "type": "buy", "value": 1328.5138 },
+    { "base": "USD", "quote": "NGN", "type": "middle", "value": 1330.3745 },
+    { "base": "USD", "quote": "NGN", "type": "sell", "value": 1330.8745 },
+    { "base": "USD", "quote": "NGN", "type": "buy", "value": 1329.8745 },
     // … the rest of the published table (13 currencies vs NGN)
   ],
   disclaimer: '…'
@@ -157,7 +157,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'cbn-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'NGN', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'NGN', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -170,11 +170,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'NGN',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 1329.0138, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 1330.3745, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
