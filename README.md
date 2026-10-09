@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/cbn-exchange-rate.svg)](https://github.com/AllRates-Today/cbn-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/cbn-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/NGN today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fcbn%3Fsource%3DUSD%26target%3DNGN&query=%24.rate&label=USD%2FNGN%20published%20by%20Central%20Bank%20of%20Nigeria&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/cbn/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fcbn%3Fsource%3DUSD%26target%3DNGN&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/cbn/)
 
 **Official Central Bank of Nigeria (Nigeria) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Central Bank of Nigeria itself prints, every business day.**
 
@@ -32,6 +34,58 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Central Bank of Nigeria table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Central Bank of Nigeria — 39 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | NGN | buy | 362.4315 |
+| AED | NGN | middle | 362.5676 |
+| AED | NGN | sell | 362.7038 |
+| CHF | NGN | buy | 1596.2371 |
+| CHF | NGN | middle | 1596.8367 |
+| CHF | NGN | sell | 1597.4363 |
+| CNY | NGN | buy | 198.5979 |
+| CNY | NGN | middle | 198.6725 |
+| CNY | NGN | sell | 198.747 |
+| DKK | NGN | buy | 199.2071 |
+| DKK | NGN | middle | 199.282 |
+| DKK | NGN | sell | 199.3568 |
+| EUR | NGN | buy | 1489.1039 |
+| EUR | NGN | middle | 1489.6633 |
+| EUR | NGN | sell | 1490.2226 |
+| GBP | NGN | buy | 1757.8534 |
+| GBP | NGN | middle | 1758.5137 |
+| GBP | NGN | sell | 1759.174 |
+| JPY | NGN | buy | 8.4135 |
+| JPY | NGN | middle | 8.4167 |
+| JPY | NGN | sell | 8.4198 |
+| SAR | NGN | buy | 354.5351 |
+| SAR | NGN | middle | 354.6683 |
+| SAR | NGN | sell | 354.8015 |
+| USD | NGN | buy | 1331.1021 |
+| USD | NGN | middle | 1331.6021 |
+| USD | NGN | sell | 1332.1021 |
+| XDR | NGN | buy | 1799.4371 |
+| XDR | NGN | middle | 1800.113 |
+| XDR | NGN | sell | 1800.7889 |
+| XOF | NGN | buy | 2.2484 |
+| XOF | NGN | middle | 2.2584 |
+| XOF | NGN | sell | 2.2684 |
+| XUA | NGN | buy | 1798.7758 |
+| XUA | NGN | middle | 1799.4515 |
+| XUA | NGN | sell | 1800.1271 |
+| ZAR | NGN | buy | 79.9442 |
+| ZAR | NGN | middle | 79.9742 |
+| ZAR | NGN | sell | 80.0042 |
+
+Source: [Official rates published by CBN, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbn/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
