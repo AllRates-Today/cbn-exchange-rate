@@ -40,49 +40,49 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Central Bank of Nigeria table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-09** by Central Bank of Nigeria — 39 rates. Updated 2026-10-09.
+Published **2026-10-12** by Central Bank of Nigeria — 39 rates. Updated 2026-10-12.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | NGN | buy | 362.1327 |
-| AED | NGN | middle | 362.2689 |
-| AED | NGN | sell | 362.405 |
-| CHF | NGN | buy | 1599.1657 |
-| CHF | NGN | middle | 1599.7668 |
-| CHF | NGN | sell | 1600.3679 |
-| CNY | NGN | buy | 198.7637 |
-| CNY | NGN | middle | 198.8384 |
-| CNY | NGN | sell | 198.9131 |
-| DKK | NGN | buy | 199.2639 |
-| DKK | NGN | middle | 199.3388 |
-| DKK | NGN | sell | 199.4137 |
-| EUR | NGN | buy | 1489.6753 |
-| EUR | NGN | middle | 1490.2353 |
-| EUR | NGN | sell | 1490.7952 |
-| GBP | NGN | buy | 1757.8408 |
-| GBP | NGN | middle | 1758.5015 |
-| GBP | NGN | sell | 1759.1623 |
-| JPY | NGN | buy | 8.4024 |
-| JPY | NGN | middle | 8.4056 |
-| JPY | NGN | sell | 8.4087 |
-| SAR | NGN | buy | 354.2439 |
-| SAR | NGN | middle | 354.3771 |
-| SAR | NGN | sell | 354.5103 |
-| USD | NGN | buy | 1330.186 |
-| USD | NGN | middle | 1330.686 |
-| USD | NGN | sell | 1331.186 |
-| XDR | NGN | buy | 1800.0875 |
-| XDR | NGN | middle | 1800.7641 |
-| XDR | NGN | sell | 1801.4408 |
-| XOF | NGN | buy | 2.2508 |
-| XOF | NGN | middle | 2.2608 |
-| XOF | NGN | sell | 2.2708 |
-| XUA | NGN | buy | 1798.7607 |
-| XUA | NGN | middle | 1799.4368 |
-| XUA | NGN | sell | 1800.113 |
-| ZAR | NGN | buy | 80.4136 |
-| ZAR | NGN | middle | 80.4438 |
-| ZAR | NGN | sell | 80.4741 |
+| AED | NGN | buy | 362.3805 |
+| AED | NGN | middle | 362.5166 |
+| AED | NGN | sell | 362.6527 |
+| CHF | NGN | buy | 1597.3791 |
+| CHF | NGN | middle | 1597.9791 |
+| CHF | NGN | sell | 1598.5791 |
+| CNY | NGN | buy | 198.8759 |
+| CNY | NGN | middle | 198.9506 |
+| CNY | NGN | sell | 199.0253 |
+| DKK | NGN | buy | 199.0364 |
+| DKK | NGN | middle | 199.1112 |
+| DKK | NGN | sell | 199.186 |
+| EUR | NGN | buy | 1488.0322 |
+| EUR | NGN | middle | 1488.5912 |
+| EUR | NGN | sell | 1489.1501 |
+| GBP | NGN | buy | 1761.3062 |
+| GBP | NGN | middle | 1761.9678 |
+| GBP | NGN | sell | 1762.6294 |
+| JPY | NGN | buy | 8.3912 |
+| JPY | NGN | middle | 8.3944 |
+| JPY | NGN | sell | 8.3975 |
+| SAR | NGN | buy | 354.4013 |
+| SAR | NGN | middle | 354.5345 |
+| SAR | NGN | sell | 354.6676 |
+| USD | NGN | buy | 1331.096 |
+| USD | NGN | middle | 1331.596 |
+| USD | NGN | sell | 1332.096 |
+| XDR | NGN | buy | 1801.3722 |
+| XDR | NGN | middle | 1802.0489 |
+| XDR | NGN | sell | 1802.7255 |
+| XOF | NGN | buy | 2.2533 |
+| XOF | NGN | middle | 2.2633 |
+| XOF | NGN | sell | 2.2733 |
+| XUA | NGN | buy | 1799.4123 |
+| XUA | NGN | middle | 1800.0882 |
+| XUA | NGN | sell | 1800.7641 |
+| ZAR | NGN | buy | 80.5193 |
+| ZAR | NGN | middle | 80.5495 |
+| ZAR | NGN | sell | 80.5797 |
 
 Source: [Official rates published by CBN, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbn/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -139,10 +139,10 @@ const pair = await getRate('USD', 'NGN', { apiKey: 'art_live_...' });
 {
   bank: 'cbn',
   name: 'Central Bank of Nigeria',
-  rate_date: '2026-10-08',   // Central Bank of Nigeria's own publication date
+  rate_date: '2026-10-12',   // Central Bank of Nigeria's own publication date
   source: 'USD',
   target: 'NGN',
-  rate: 1331.6021,
+  rate: 1331.596,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -167,11 +167,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbn',
   name: 'Central Bank of Nigeria',
-  rate_date: '2026-10-08',
+  rate_date: '2026-10-12',
   rates: [
-    { "base": "USD", "quote": "NGN", "type": "middle", "value": 1331.6021 },
-    { "base": "USD", "quote": "NGN", "type": "sell", "value": 1332.1021 },
-    { "base": "USD", "quote": "NGN", "type": "buy", "value": 1331.1021 },
+    { "base": "USD", "quote": "NGN", "type": "middle", "value": 1331.596 },
+    { "base": "USD", "quote": "NGN", "type": "sell", "value": 1332.096 },
+    { "base": "USD", "quote": "NGN", "type": "buy", "value": 1331.096 },
     // … the rest of the published table (13 currencies vs NGN)
   ],
   disclaimer: '…'
@@ -211,7 +211,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'cbn-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'NGN', from: '2026-01-01', to: '2026-10-08' },
+  { source: 'USD', target: 'NGN', from: '2026-01-01', to: '2026-10-12' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -224,11 +224,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'NGN',
   from: '2026-01-01',
-  to: '2026-10-08',
+  to: '2026-10-12',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-08', rate: 1331.6021, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-10-12', rate: 1331.596, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -278,6 +278,7 @@ curl "https://allratestoday.com/api/v1/central-bank/cbn/latest?format=xml&api_ke
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('cbn')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate cbn ...` command
+- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
