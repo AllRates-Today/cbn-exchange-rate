@@ -42,7 +42,7 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-13** by Central Bank of Nigeria — 39 rates. Updated 2026-10-13.
+Published **2026-10-13** by Central Bank of Nigeria — 39 rates. Updated 2026-10-14.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -141,10 +141,10 @@ const pair = await getRate('USD', 'NGN', { apiKey: 'art_live_...' });
 {
   bank: 'cbn',
   name: 'Central Bank of Nigeria',
-  rate_date: '2026-10-12',   // Central Bank of Nigeria's own publication date
+  rate_date: '2026-10-13',   // Central Bank of Nigeria's own publication date
   source: 'USD',
   target: 'NGN',
-  rate: 1331.596,
+  rate: 1332.4728,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -169,11 +169,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbn',
   name: 'Central Bank of Nigeria',
-  rate_date: '2026-10-12',
+  rate_date: '2026-10-13',
   rates: [
-    { "base": "USD", "quote": "NGN", "type": "middle", "value": 1331.596 },
-    { "base": "USD", "quote": "NGN", "type": "sell", "value": 1332.096 },
-    { "base": "USD", "quote": "NGN", "type": "buy", "value": 1331.096 },
+    { "base": "USD", "quote": "NGN", "type": "middle", "value": 1332.4728 },
+    { "base": "USD", "quote": "NGN", "type": "sell", "value": 1332.9728 },
+    { "base": "USD", "quote": "NGN", "type": "buy", "value": 1331.9728 },
     // … the rest of the published table (13 currencies vs NGN)
   ],
   disclaimer: '…'
@@ -213,7 +213,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'cbn-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'NGN', from: '2026-01-01', to: '2026-10-12' },
+  { source: 'USD', target: 'NGN', from: '2026-01-01', to: '2026-10-13' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -226,11 +226,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'NGN',
   from: '2026-01-01',
-  to: '2026-10-12',
+  to: '2026-10-13',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-12', rate: 1331.596, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-10-13', rate: 1332.4728, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -349,9 +349,9 @@ getRate('USD', 'NGN', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 
 Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
 
-- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/cbn.csv`)
+- Hugging Face: [AllRatesToday/central-bank-exchange-rates](https://huggingface.co/datasets/AllRatesToday/central-bank-exchange-rates) — one CSV per institution (`rates/cbn.csv`)
 - Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
-- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/cbn/latest.json`
+- Raw JSON on GitHub: `https://raw.githubusercontent.com/AllRates-Today/central-bank-exchange-rates/main/data/cbn/latest.json`
 
 ## 🔗 Links
 
