@@ -42,49 +42,49 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-14** by Central Bank of Nigeria — 39 rates. Updated 2026-10-14.
+Published **2026-10-15** by Central Bank of Nigeria — 39 rates. Updated 2026-10-15.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | NGN | buy | 362.5543 |
-| AED | NGN | middle | 362.6904 |
-| AED | NGN | sell | 362.8265 |
-| CHF | NGN | buy | 1589.5778 |
-| CHF | NGN | middle | 1590.1746 |
-| CHF | NGN | sell | 1590.7715 |
-| CNY | NGN | buy | 198.9555 |
-| CNY | NGN | middle | 199.0302 |
-| CNY | NGN | sell | 199.1049 |
-| DKK | NGN | buy | 198.1296 |
-| DKK | NGN | middle | 198.204 |
-| DKK | NGN | sell | 198.2784 |
-| EUR | NGN | buy | 1490.4479 |
-| EUR | NGN | middle | 1491.0076 |
-| EUR | NGN | sell | 1491.5672 |
-| GBP | NGN | buy | 1764.2227 |
-| GBP | NGN | middle | 1764.8851 |
-| GBP | NGN | sell | 1765.5476 |
-| JPY | NGN | buy | 8.3811 |
-| JPY | NGN | middle | 8.3842 |
-| JPY | NGN | sell | 8.3874 |
-| SAR | NGN | buy | 354.6554 |
-| SAR | NGN | middle | 354.7886 |
-| SAR | NGN | sell | 354.9218 |
-| USD | NGN | buy | 1331.5893 |
-| USD | NGN | middle | 1332.0893 |
-| USD | NGN | sell | 1332.5893 |
-| XDR | NGN | buy | 1801.4273 |
-| XDR | NGN | middle | 1802.1037 |
-| XDR | NGN | sell | 1802.7801 |
-| XOF | NGN | buy | 2.2527 |
-| XOF | NGN | middle | 2.2627 |
-| XOF | NGN | sell | 2.2727 |
-| XUA | NGN | buy | 1800.9769 |
-| XUA | NGN | middle | 1801.6531 |
+| AED | NGN | buy | 362.2887 |
+| AED | NGN | middle | 362.4248 |
+| AED | NGN | sell | 362.561 |
+| CHF | NGN | buy | 1607.0216 |
+| CHF | NGN | middle | 1607.6255 |
+| CHF | NGN | sell | 1608.2293 |
+| CNY | NGN | buy | 198.8603 |
+| CNY | NGN | middle | 198.935 |
+| CNY | NGN | sell | 199.0097 |
+| DKK | NGN | buy | 199.5671 |
+| DKK | NGN | middle | 199.6421 |
+| DKK | NGN | sell | 199.7171 |
+| EUR | NGN | buy | 1489.3561 |
+| EUR | NGN | middle | 1489.9158 |
+| EUR | NGN | sell | 1490.4754 |
+| GBP | NGN | buy | 1762.9303 |
+| GBP | NGN | middle | 1763.5928 |
+| GBP | NGN | sell | 1764.2552 |
+| JPY | NGN | buy | 8.4376 |
+| JPY | NGN | middle | 8.4408 |
+| JPY | NGN | sell | 8.444 |
+| SAR | NGN | buy | 354.5656 |
+| SAR | NGN | middle | 354.6989 |
+| SAR | NGN | sell | 354.8321 |
+| USD | NGN | buy | 1330.6139 |
+| USD | NGN | middle | 1331.1139 |
+| USD | NGN | sell | 1331.6139 |
+| XDR | NGN | buy | 1801.6512 |
+| XDR | NGN | middle | 1802.3282 |
+| XDR | NGN | sell | 1803.0052 |
+| XOF | NGN | buy | 2.2537 |
+| XOF | NGN | middle | 2.2637 |
+| XOF | NGN | sell | 2.2737 |
+| XUA | NGN | buy | 1800.9759 |
+| XUA | NGN | middle | 1801.6526 |
 | XUA | NGN | sell | 1802.3294 |
-| ZAR | NGN | buy | 80.3096 |
-| ZAR | NGN | middle | 80.3398 |
-| ZAR | NGN | sell | 80.3699 |
+| ZAR | NGN | buy | 80.4317 |
+| ZAR | NGN | middle | 80.4619 |
+| ZAR | NGN | sell | 80.4922 |
 
 Source: [Official rates published by CBN, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbn/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
