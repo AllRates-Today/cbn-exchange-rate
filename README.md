@@ -20,6 +20,10 @@
 
 > **Official rate, not mid-market:** every value here is a number Central Bank of Nigeria itself published, fixed once printed and carrying the central bank's own `rate_date` — what filings and audits require. Need the live mid-market rate for pricing or display instead? Use the [mid-market API](https://allratestoday.com/docs/) or [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk). The two can diverge by several percent.
 
+## 🔑 Get your API key
+
+Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
+
 ## ⚡ Try it without a key
 
 The latest Central Bank of Nigeria table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
@@ -43,58 +47,54 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-19 by Central Bank of Nigeria — 39 rates. Updated 2026-10-19.</summary>
+<summary>Table as text: published 2026-10-20 by Central Bank of Nigeria — 39 rates. Updated 2026-10-20.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | NGN | buy | 362.8623 |
-| AED | NGN | middle | 362.9984 |
-| AED | NGN | sell | 363.1345 |
-| CHF | NGN | buy | 1616.4424 |
-| CHF | NGN | middle | 1617.0489 |
-| CHF | NGN | sell | 1617.6553 |
-| CNY | NGN | buy | 199.4876 |
-| CNY | NGN | middle | 199.5625 |
-| CNY | NGN | sell | 199.6373 |
-| DKK | NGN | buy | 200.1467 |
-| DKK | NGN | middle | 200.2218 |
-| DKK | NGN | sell | 200.2969 |
-| EUR | NGN | buy | 1496.2861 |
-| EUR | NGN | middle | 1496.8474 |
-| EUR | NGN | sell | 1497.4088 |
-| GBP | NGN | buy | 1776.9646 |
-| GBP | NGN | middle | 1777.6313 |
-| GBP | NGN | sell | 1778.2979 |
-| JPY | NGN | buy | 8.4181 |
-| JPY | NGN | middle | 8.4213 |
-| JPY | NGN | sell | 8.4244 |
-| SAR | NGN | buy | 355.1556 |
-| SAR | NGN | middle | 355.2888 |
-| SAR | NGN | sell | 355.4221 |
-| USD | NGN | buy | 1332.7568 |
-| USD | NGN | middle | 1333.2568 |
-| USD | NGN | sell | 1333.7568 |
-| XDR | NGN | buy | 1805.7522 |
-| XDR | NGN | middle | 1806.4296 |
-| XDR | NGN | sell | 1807.1071 |
-| XOF | NGN | buy | 2.2646 |
-| XOF | NGN | middle | 2.2746 |
-| XOF | NGN | sell | 2.2846 |
-| XUA | NGN | buy | 1805.1223 |
-| XUA | NGN | middle | 1805.7995 |
-| XUA | NGN | sell | 1806.4767 |
-| ZAR | NGN | buy | 81.1123 |
-| ZAR | NGN | middle | 81.1428 |
-| ZAR | NGN | sell | 81.1732 |
+| AED | NGN | buy | 362.8125 |
+| AED | NGN | middle | 362.9487 |
+| AED | NGN | sell | 363.0848 |
+| CHF | NGN | buy | 1618.6648 |
+| CHF | NGN | middle | 1619.2721 |
+| CHF | NGN | sell | 1619.8794 |
+| CNY | NGN | buy | 199.5518 |
+| CNY | NGN | middle | 199.6267 |
+| CNY | NGN | sell | 199.7015 |
+| DKK | NGN | buy | 200.1332 |
+| DKK | NGN | middle | 200.2083 |
+| DKK | NGN | sell | 200.2833 |
+| EUR | NGN | buy | 1496.1625 |
+| EUR | NGN | middle | 1496.7238 |
+| EUR | NGN | sell | 1497.2852 |
+| GBP | NGN | buy | 1783.3478 |
+| GBP | NGN | middle | 1784.0169 |
+| GBP | NGN | sell | 1784.686 |
+| JPY | NGN | buy | 8.4345 |
+| JPY | NGN | middle | 8.4376 |
+| JPY | NGN | sell | 8.4408 |
+| SAR | NGN | buy | 355.2588 |
+| SAR | NGN | middle | 355.3921 |
+| SAR | NGN | sell | 355.5254 |
+| USD | NGN | buy | 1332.6467 |
+| USD | NGN | middle | 1333.1467 |
+| USD | NGN | sell | 1333.6467 |
+| XDR | NGN | buy | 1805.603 |
+| XDR | NGN | middle | 1806.2805 |
+| XDR | NGN | sell | 1806.9579 |
+| XOF | NGN | buy | 2.2615 |
+| XOF | NGN | middle | 2.2715 |
+| XOF | NGN | sell | 2.2815 |
+| XUA | NGN | buy | 1805.0351 |
+| XUA | NGN | middle | 1805.7124 |
+| XUA | NGN | sell | 1806.3896 |
+| ZAR | NGN | buy | 80.9539 |
+| ZAR | NGN | middle | 80.9843 |
+| ZAR | NGN | sell | 81.0146 |
 
 </details>
 
 Source: [Official rates published by CBN, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbn/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
-
-## 🔑 Get your API key
-
-Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
 ## 📦 Installation
 
