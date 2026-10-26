@@ -47,49 +47,49 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-23 by Central Bank of Nigeria — 39 rates. Updated 2026-10-23.</summary>
+<summary>Table as text: published 2026-10-26 by Central Bank of Nigeria — 39 rates. Updated 2026-10-26.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | NGN | buy | 370.5182 |
-| AED | NGN | middle | 370.6544 |
-| AED | NGN | sell | 370.7905 |
-| CHF | NGN | buy | 1653.3099 |
-| CHF | NGN | middle | 1653.9174 |
-| CHF | NGN | sell | 1654.5248 |
-| CNY | NGN | buy | 204.0147 |
-| CNY | NGN | middle | 204.0897 |
-| CNY | NGN | sell | 204.1646 |
-| DKK | NGN | buy | 203.8619 |
-| DKK | NGN | middle | 203.9368 |
-| DKK | NGN | sell | 204.0117 |
-| EUR | NGN | buy | 1524.004 |
-| EUR | NGN | middle | 1524.564 |
-| EUR | NGN | sell | 1525.1239 |
-| GBP | NGN | buy | 1820.1227 |
-| GBP | NGN | middle | 1820.7914 |
-| GBP | NGN | sell | 1821.4602 |
-| JPY | NGN | buy | 8.6994 |
-| JPY | NGN | middle | 8.7025 |
-| JPY | NGN | sell | 8.7057 |
-| SAR | NGN | buy | 362.5328 |
-| SAR | NGN | middle | 362.666 |
-| SAR | NGN | sell | 362.7992 |
-| USD | NGN | buy | 1360.8394 |
-| USD | NGN | middle | 1361.3394 |
-| USD | NGN | sell | 1361.8394 |
-| XDR | NGN | buy | 1844.4817 |
-| XDR | NGN | middle | 1845.1594 |
-| XDR | NGN | sell | 1845.8371 |
-| XOF | NGN | buy | 2.2756 |
-| XOF | NGN | middle | 2.2856 |
-| XOF | NGN | sell | 2.2956 |
-| XUA | NGN | buy | 1820.9701 |
-| XUA | NGN | middle | 1821.6391 |
-| XUA | NGN | sell | 1822.3082 |
-| ZAR | NGN | buy | 82.0292 |
-| ZAR | NGN | middle | 82.0593 |
-| ZAR | NGN | sell | 82.0895 |
+| AED | NGN | buy | 372.0882 |
+| AED | NGN | middle | 372.2244 |
+| AED | NGN | sell | 372.3605 |
+| CHF | NGN | buy | 1654.286 |
+| CHF | NGN | middle | 1654.8913 |
+| CHF | NGN | sell | 1655.4966 |
+| CNY | NGN | buy | 204.9406 |
+| CNY | NGN | middle | 205.0156 |
+| CNY | NGN | sell | 205.0906 |
+| DKK | NGN | buy | 204.548 |
+| DKK | NGN | middle | 204.6228 |
+| DKK | NGN | sell | 204.6977 |
+| EUR | NGN | buy | 1529.2318 |
+| EUR | NGN | middle | 1529.7913 |
+| EUR | NGN | sell | 1530.3508 |
+| GBP | NGN | buy | 1824.4186 |
+| GBP | NGN | middle | 1825.0861 |
+| GBP | NGN | sell | 1825.7536 |
+| JPY | NGN | buy | 8.6818 |
+| JPY | NGN | middle | 8.685 |
+| JPY | NGN | sell | 8.6882 |
+| SAR | NGN | buy | 364.1175 |
+| SAR | NGN | middle | 364.2507 |
+| SAR | NGN | sell | 364.3839 |
+| USD | NGN | buy | 1366.6057 |
+| USD | NGN | middle | 1367.1057 |
+| USD | NGN | sell | 1367.6057 |
+| XDR | NGN | buy | 1851.5047 |
+| XDR | NGN | middle | 1852.1821 |
+| XDR | NGN | sell | 1852.8596 |
+| XOF | NGN | buy | 2.303 |
+| XOF | NGN | middle | 2.313 |
+| XOF | NGN | sell | 2.323 |
+| XUA | NGN | buy | 1843.783 |
+| XUA | NGN | middle | 1844.4576 |
+| XUA | NGN | sell | 1845.1322 |
+| ZAR | NGN | buy | 82.1692 |
+| ZAR | NGN | middle | 82.1993 |
+| ZAR | NGN | sell | 82.2294 |
 
 </details>
 
